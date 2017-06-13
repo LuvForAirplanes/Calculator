@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en>"
+<head>
+    <script src="script.js" type="text/javascript"></script>
+    <title>Basic Calculator</title>
+    <style>
+.back {
+background: url("");
+background-color: black;
+}
+        .mcb {
+            border-radius: 15px;
+            border: 2px solid #1f1f1f;
+background-color: #3e3e42;
+            padding: 15px;
+            color: whitesmoke;
+            text-align: center;
+            font: 16px/18px Helvetica,Arial;
+            text-shadow: 0px -1px 1px rgba(0,0,0,0.5);
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+        .middle {
+            background: #252525;
+    position: absolute;
+    left: 10%;
+    top: 13%;
+    width: 80%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+        }
+        .in {
+            background: #252525;
+    position: absolute;
+    left: 40%;
+    top: 13%;
+    width: 50%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+        }
+.box {
+    width: 45%;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    left:20px;
+    top: 710px;
+    background: #252525;
+    color: whitesmoke;
+    font-family:Calibri;
+    font-size: large;
+    scrollbar-base-color: #252525;
+}
+    </style>
+</head>
+<body bgcolor="black" class=back >
+    <form class="middle" name="form1" id="form1">
+        <div class="in">
+        <textarea id=nums cols=20 rows=2 class="text box"></textarea>
+        <br>
+        <br>
+        <input type=button class=mcb id=1 onclick="addNum(event)" value="1"/><input type=button class=mcb id=2 onclick="addNum(event)"value="2"/><input type=button class=mcb id=3 onclick="addNum(event)"value="3"/>
+        <br>
+        <input type=button class=mcb id=4 onclick="addNum(event)" value="4"/><input type=button class=mcb id=5 onclick="addNum(event)"value="5"/><input type=button class=mcb id=6 onclick="addNum(event)"value="6"/>
+        <br>
+        <input type=button class=mcb id=7 onclick="addNum(event)" value="7"/><input type=button class=mcb id=8 onclick="addNum(event)" value="8"/><input type=button class=mcb id=9 onclick="addNum(event)"value="9"/>
+        <br>
+        <input type=button class=mcb id=0 onclick="addNum(event)" value="0"/><input type=button class=mcb id=00 onclick="addNum(event)" value="00"/><input type=button class=mcb onclick="info()" value="?" />
+        <br>
+        <br>
+        <input type=button class=mcb id="+" onclick="numeric(event)"value="+"/><input type=button class=mcb id="-" onclick="numeric(event)"value=- /><input type=button class=mcb id="*" onclick="numeric(event)"value="*"><input type=button class=mcb id="/" onclick="numeric(event)"value="/"/><input type=button class=mcb id=equal onclick="eqail(event)"value="=">
+        </div>
+            </form>
+</body>
+</html>
